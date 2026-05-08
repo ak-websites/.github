@@ -1,66 +1,38 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=12,14,20&amp;height=220&amp;section=header&amp;text=ak-Machine-Learning&amp;fontSize=52&amp;fontColor=ffffff&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=A%20collection%20of%20ML%20%26%20AI%20projects%20built%20from%20scratch&amp;descAlignY=56&amp;descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=2,6,30&amp;height=220&amp;section=header&amp;text=ak-websites&amp;fontSize=60&amp;fontColor=ffffff&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=A%20growing%20collection%20of%20websites%20%26%20web%20projects&amp;descAlignY=56&amp;descAlign=50" width="100%"/>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white"/>
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&amp;logo=jupyter&amp;logoColor=white"/>
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&amp;logo=tensorflow&amp;logoColor=white"/>
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&amp;logo=scikit-learn&amp;logoColor=white"/>
-  <img src="https://img.shields.io/badge/NLP-8A2BE2?style=for-the-badge&amp;logo=openai&amp;logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black"/>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&amp;logo=react&amp;logoColor=black"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Repos-5-brightgreen?style=flat-square" />
-  <img src="https://img.shields.io/badge/Focus-ML%20%7C%20NLP%20%7C%20AI-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/Updated-2026-05-08_11-53_UTC-orange?style=flat-square" />
+  <img src="https://img.shields.io/badge/Sites-2-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Focus-Web%20Development-blueviolet?style=flat-square" />
+  <img src="https://img.shields.io/badge/Updated-2026-05-08_11-59_UTC-orange?style=flat-square" />
 </p>
 
 </div>
 
 ---
 
-## 🧠 About This Organization
+## 🌐 About This Organization
 
-> **`ak-Machine-Learning`** is a personal ML research & project organization — a growing collection of experiments, classifiers, deep learning models, and AI tools built hands-on from the ground up.
+> **`ak-websites`** is a personal web development portfolio — a collection of websites, landing pages, and web projects built and maintained by Aashutosh Kuikel.
 
-Each repository is an independent project with its own dataset, pipeline, and goal. This is not a single project — it's an evolving portfolio.
-
----
-
-## 📁 Repositories (5 projects)
-
-| Repository | Description | Language | Status |
-|------------|-------------|----------|--------|
-| [Pneumonia-COVID-Detection-CNN](https://github.com/ak-Machine-Learning/Pneumonia-COVID-Detection-CNN) | A Deep Learning Web Application for Automated Detection of COVID-19 and Pneumonia from Chest X-Rays. | 📓 Jupyter Notebook | ✅ Active |
-| [REVIEW_RATINGS_CLASSIFIER](https://github.com/ak-Machine-Learning/REVIEW_RATINGS_CLASSIFIER) | _No description provided._ | 📓 Jupyter Notebook | ✅ Active |
-| [Sentiment-Analysis-Model-Comparison](https://github.com/ak-Machine-Learning/Sentiment-Analysis-Model-Comparison) | _No description provided._ | 📓 Jupyter Notebook | ✅ Active |
-| [Chatbot](https://github.com/ak-Machine-Learning/Chatbot) | A simple, lightweight conversational agent designed for quick deployment and easy integration. | 🐍 Python | ✅ Active |
-| [Doodle](https://github.com/ak-Machine-Learning/Doodle) | Doodle project | 📓 Jupyter Notebook | ✅ Active |
-
-
+Each repository is a standalone web project with its own design, stack, and purpose. From simple landing pages to full web applications — this is where ideas go live.
 
 ---
 
-## 🔬 Core Focus Areas
+## 📁 Projects (2 sites)
 
-```
-Natural Language Processing (NLP)
-   ├── Text Classification
-   ├── Sentiment Analysis
-   ├── Review Rating Prediction
-   └── Chatbot Development
-
-Machine Learning
-   ├── Classical Models  (Naive Bayes, SVM, Logistic Regression)
-   ├── Ensemble Methods  (Random Forest, Gradient Boosting)
-   └── Deep Learning     (LSTM, GRU, Neural Networks)
-
-ML Engineering
-   ├── Pipeline Design (leakage-free, modular)
-   ├── Model Evaluation (F1, AUC-ROC, Confusion Matrix)
-   └── Experiment Tracking & Comparison
-```
+| Repository | Description | Language | Live | Status |
+|------------|-------------|----------|------|--------|
+| [Wedding_invite](https://github.com/ak-websites/Wedding_invite) | _No description provided._ | 🌐 HTML | [🔗 Visit](https://ak-websites.github.io/Wedding_invite/) | 🚀 Live |
+| [Portfoilo](https://github.com/ak-websites/Portfoilo) | _No description provided._ | ⚡ TypeScript | [🔗 Visit](https://nayan-rho.vercel.app) | 🚀 Live |
 
 ---
 
@@ -68,14 +40,19 @@ ML Engineering
 
 | Layer | Tools |
 |-------|-------|
-| **Language** | Python 3.10+ |
-| **Notebooks** | Jupyter Notebook, Google Colab |
-| **ML / Classical** | scikit-learn, XGBoost |
-| **Deep Learning** | TensorFlow, Keras |
-| **NLP** | NLTK, TF-IDF, Word Embeddings |
-| **Data** | NumPy, Pandas |
-| **Visualization** | Matplotlib, Seaborn, Plotly |
-| **Version Control** | Git, GitHub |
+| **Markup** | HTML5 |
+| **Styling** | CSS3, Tailwind CSS |
+| **Scripting** | JavaScript, TypeScript |
+| **Frameworks** | React, Vue |
+| **Hosting** | GitHub Pages, Vercel, Netlify |
+| **Tools** | VS Code, Git, Figma |
+
+---
+
+## 🚀 Deployment
+
+Most projects in this org are deployed via **GitHub Pages** or **Vercel**.
+Live links are listed in the table above where available.
 
 ---
 
@@ -85,7 +62,8 @@ ML Engineering
 
 **Aashutosh Kuikel**
 
-<a href="https://github.com/ak-Machine-Learning"><img src="https://img.shields.io/badge/GitHub-ak--Machine--Learning-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white"/></a>
+<a href="https://github.com/ak-websites"><img src="https://img.shields.io/badge/GitHub-ak--websites-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white"/></a>
+<a href="https://github.com/ak-Machine-Learning"><img src="https://img.shields.io/badge/Also%20see-ak--Machine--Learning-blueviolet?style=for-the-badge&amp;logo=github&amp;logoColor=white"/></a>
 <a href=""><img src="https://img.shields.io/badge/📍-Kathmandu%2C%20Nepal-red?style=for-the-badge"/></a>
 
 </div>
@@ -94,8 +72,8 @@ ML Engineering
 
 <div align="center">
 
-_Last auto-updated: **2026-05-08 11:53 UTC**_ · _More projects incoming — watch this space._ 👀
+_Last auto-updated: **2026-05-08 11:59 UTC**_ · _More sites incoming — watch this space._ 🌍
 
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=12,14,20&amp;height=100&amp;section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=2,6,30&amp;height=100&amp;section=footer" width="100%"/>
 
 </div>
