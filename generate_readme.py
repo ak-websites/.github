@@ -2,7 +2,7 @@ import requests
 import os
 from datetime import datetime, timezone
 
-ORG = "ak-websites"
+ORG = "ak-Machine-Learning"
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 HEADERS = {
@@ -11,14 +11,12 @@ HEADERS = {
 }
 
 LANG_EMOJI = {
-    "HTML": "🌐",
-    "CSS": "🎨",
-    "JavaScript": "⚡",
-    "TypeScript": "⚡",
-    "Vue": "💚",
-    "React": "⚛️",
     "Python": "🐍",
-    "PHP": "🐘",
+    "Jupyter Notebook": "📓",
+    "JavaScript": "🌐",
+    "TypeScript": "🌐",
+    "R": "📊",
+    "Shell": "⚙️",
     None: "📁",
 }
 
@@ -45,14 +43,12 @@ def status_badge(repo):
     days_ago = (datetime.now(timezone.utc) - updated).days
     if repo["archived"]:
         return "🗄️ Archived"
-    elif repo.get("homepage"):
-        return "🚀 Live"
     elif days_ago <= 14:
-        return "🔨 In Progress"
+        return "✅ Active"
     elif days_ago <= 90:
-        return "🔧 Maintenance"
+        return "🔨 In Progress"
     else:
-        return "📦 Stable"
+        return "🧪 Experimental"
 
 
 def build_repo_table(repos):
@@ -62,14 +58,12 @@ def build_repo_table(repos):
             continue
         name = repo["name"]
         url = repo["html_url"]
-        homepage = repo.get("homepage") or ""
         desc = repo["description"] or "_No description provided._"
         lang = repo["language"]
         emoji = LANG_EMOJI.get(lang, "📁")
         lang_label = f"{emoji} {lang}" if lang else "📁 —"
         status = status_badge(repo)
-        live_link = f"[🔗 Visit]({homepage})" if homepage else "—"
-        rows.append(f"| [{name}]({url}) | {desc} | {lang_label} | {live_link} | {status} |")
+        rows.append(f"| [{name}]({url}) | {desc} | {lang_label} | {status} |")
     return "\n".join(rows)
 
 
@@ -80,18 +74,19 @@ def generate_readme(repos):
 
     readme = f"""<div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=2,6,30&amp;height=220&amp;section=header&amp;text=ak-websites&amp;fontSize=60&amp;fontColor=ffffff&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=A%20growing%20collection%20of%20websites%20%26%20web%20projects&amp;descAlignY=56&amp;descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=12,14,20&amp;height=220&amp;section=header&amp;text=ak-Machine-Learning&amp;fontSize=52&amp;fontColor=ffffff&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=A%20collection%20of%20ML%20%26%20AI%20projects%20built%20from%20scratch&amp;descAlignY=56&amp;descAlign=50" width="100%"/>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black"/>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&amp;logo=react&amp;logoColor=black"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&amp;logo=jupyter&amp;logoColor=white"/>
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&amp;logo=tensorflow&amp;logoColor=white"/>
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&amp;logo=scikit-learn&amp;logoColor=white"/>
+  <img src="https://img.shields.io/badge/NLP-8A2BE2?style=for-the-badge&amp;logo=openai&amp;logoColor=white"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Sites-{total}-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/Focus-Web%20Development-blueviolet?style=flat-square" />
+  <img src="https://img.shields.io/badge/Repos-{total}-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/Focus-ML%20%7C%20NLP%20%7C%20AI-blue?style=flat-square" />
   <img src="https://img.shields.io/badge/Updated-{updated_at.replace(' ', '_').replace(':', '-')}-orange?style=flat-square" />
 </p>
 
@@ -99,19 +94,43 @@ def generate_readme(repos):
 
 ---
 
-## 🌐 About This Organization
+## 🧠 About This Organization
 
-> **`ak-websites`** is a personal web development portfolio — a collection of websites, landing pages, and web projects built and maintained by Aashutosh Kuikel.
+> **`ak-Machine-Learning`** is a personal ML research & project organization — a growing collection of experiments, classifiers, deep learning models, and AI tools built hands-on from the ground up.
 
-Each repository is a standalone web project with its own design, stack, and purpose. From simple landing pages to full web applications — this is where ideas go live.
+Each repository is an independent project with its own dataset, pipeline, and goal. This is not a single project — it's an evolving portfolio.
 
 ---
 
-## 📁 Projects ({total} sites)
+## 📁 Repositories ({total} projects)
 
-| Repository | Description | Language | Live | Status |
-|------------|-------------|----------|------|--------|
+| Repository | Description | Language | Status |
+|------------|-------------|----------|--------|
 {table}
+
+
+
+---
+
+## 🔬 Core Focus Areas
+
+```
+Natural Language Processing (NLP)
+   ├── Text Classification
+   ├── Sentiment Analysis
+   ├── Review Rating Prediction
+   └── Chatbot Development
+
+Machine Learning
+   ├── Classical Models  (Naive Bayes, SVM, Logistic Regression)
+   ├── Ensemble Methods  (Random Forest, Gradient Boosting)
+   └── Deep Learning     (LSTM, GRU, Neural Networks)
+
+ML Engineering
+   ├── Pipeline Design (leakage-free, modular)
+   ├── Model Evaluation (F1, AUC-ROC, Confusion Matrix)
+   └── Experiment Tracking & Comparison
+```
 
 ---
 
@@ -119,19 +138,14 @@ Each repository is a standalone web project with its own design, stack, and purp
 
 | Layer | Tools |
 |-------|-------|
-| **Markup** | HTML5 |
-| **Styling** | CSS3, Tailwind CSS |
-| **Scripting** | JavaScript, TypeScript |
-| **Frameworks** | React, Vue |
-| **Hosting** | GitHub Pages, Vercel, Netlify |
-| **Tools** | VS Code, Git, Figma |
-
----
-
-## 🚀 Deployment
-
-Most projects in this org are deployed via **GitHub Pages** or **Vercel**.
-Live links are listed in the table above where available.
+| **Language** | Python 3.10+ |
+| **Notebooks** | Jupyter Notebook, Google Colab |
+| **ML / Classical** | scikit-learn, XGBoost |
+| **Deep Learning** | TensorFlow, Keras |
+| **NLP** | NLTK, TF-IDF, Word Embeddings |
+| **Data** | NumPy, Pandas |
+| **Visualization** | Matplotlib, Seaborn, Plotly |
+| **Version Control** | Git, GitHub |
 
 ---
 
@@ -141,9 +155,8 @@ Live links are listed in the table above where available.
 
 **Aashutosh Kuikel**
 
-[![GitHub](https://img.shields.io/badge/GitHub-ak--websites-181717?style=for-the-badge&logo=github)](https://github.com/ak-websites)
-[![ML Org](https://img.shields.io/badge/Also%20see-ak--Machine--Learning-blueviolet?style=for-the-badge&logo=github)](https://github.com/ak-Machine-Learning)
-[![Location](https://img.shields.io/badge/📍-Kathmandu%2C%20Nepal-red?style=for-the-badge)]()
+<a href="https://github.com/ak-Machine-Learning"><img src="https://img.shields.io/badge/GitHub-ak--Machine--Learning-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white"/></a>
+<a href=""><img src="https://img.shields.io/badge/📍-Kathmandu%2C%20Nepal-red?style=for-the-badge"/></a>
 
 </div>
 
@@ -151,9 +164,9 @@ Live links are listed in the table above where available.
 
 <div align="center">
 
-_Last auto-updated: **{updated_at}**_ · _More sites incoming — watch this space._ 🌍
+_Last auto-updated: **{updated_at}**_ · _More projects incoming — watch this space._ 👀
 
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=2,6,30&amp;height=100&amp;section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=12,14,20&amp;height=100&amp;section=footer" width="100%"/>
 
 </div>
 """
@@ -167,6 +180,7 @@ def main():
 
     readme = generate_readme(repos)
 
+    # Write to profile/README.md (org profile location)
     os.makedirs("profile", exist_ok=True)
     with open("profile/README.md", "w", encoding="utf-8") as f:
         f.write(readme)
