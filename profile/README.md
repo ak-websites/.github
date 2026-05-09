@@ -12,7 +12,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Sites-2-blue?style=flat-square" />
   <img src="https://img.shields.io/badge/Focus-Web%20Development-blueviolet?style=flat-square" />
-  <img src="https://img.shields.io/badge/Updated-2026-05-08_11-59_UTC-orange?style=flat-square" />
+  <img src="https://img.shields.io/badge/Updated-2026-05-09_03-25_UTC-orange?style=flat-square" />
 </p>
 
 </div>
@@ -31,8 +31,8 @@ Each repository is a standalone web project with its own design, stack, and purp
 
 | Repository | Description | Language | Live | Status |
 |------------|-------------|----------|------|--------|
-| [Wedding_invite](https://github.com/ak-websites/Wedding_invite) | _No description provided._ | 🌐 HTML | [🔗 Visit](https://ak-websites.github.io/Wedding_invite/) | 🚀 Live |
 | [Portfoilo](https://github.com/ak-websites/Portfoilo) | _No description provided._ | ⚡ TypeScript | [🔗 Visit](https://nayan-rho.vercel.app) | 🚀 Live |
+| [Wedding_invite](https://github.com/ak-websites/Wedding_invite) | _No description provided._ | 🌐 HTML | [🔗 Visit](https://ak-websites.github.io/Wedding_invite/) | 🚀 Live |
 
 ---
 
@@ -72,7 +72,7 @@ Live links are listed in the table above where available.
 
 <div align="center">
 
-_Last auto-updated: **2026-05-08 11:59 UTC**_ · _More sites incoming — watch this space._ 🌍
+_Last auto-updated: **2026-05-09 03:25 UTC**_ · _More sites incoming — watch this space._ 🌍
 
 <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=2,6,30&amp;height=100&amp;section=footer" width="100%"/>
 
